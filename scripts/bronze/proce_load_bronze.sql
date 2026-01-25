@@ -47,7 +47,7 @@ BEGIN
 
     RAISE NOTICE '>> Inserting Data Into: bronze.crm_cust_info';
     COPY bronze.crm_cust_info
-    FROM '/Users/nithishkumars/Downloads/cust_info.csv'
+    FROM '/yourfilepath'
     DELIMITER ','
     CSV HEADER;
 
@@ -65,7 +65,7 @@ BEGIN
 
     RAISE NOTICE '>> Inserting Data Into: bronze.crm_prd_info';
     COPY bronze.crm_prd_info
-    FROM '/Users/nithishkumars/Downloads/prd_info.csv'
+    FROM '/yourfilepath'
     DELIMITER ','
     CSV HEADER;
 
@@ -83,7 +83,7 @@ BEGIN
 
     RAISE NOTICE '>> Inserting Data Into: bronze.crm_sales_details';
     COPY bronze.crm_sales_details
-    FROM '/Users/nithishkumars/Downloads/sales_details.csv'
+    FROM '/yourfilepath'
     DELIMITER ','
     CSV HEADER;
 
@@ -104,7 +104,7 @@ BEGIN
     TRUNCATE TABLE bronze.erp_loc_a101;
 
     COPY bronze.erp_loc_a101
-    FROM '/Users/nithishkumars/Downloads/loc_a101.csv'
+    FROM '/yourfilepath'
     DELIMITER ','
     CSV HEADER;
 
@@ -119,7 +119,7 @@ BEGIN
     TRUNCATE TABLE bronze.erp_cust_az12;
 
     COPY bronze.erp_cust_az12
-    FROM '/Users/nithishkumars/Downloads/cust_az12.csv'
+    FROM '/yourfilepathv'
     DELIMITER ','
     CSV HEADER;
 
@@ -134,7 +134,7 @@ BEGIN
     TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 
     COPY bronze.erp_px_cat_g1v2
-    FROM '/Users/nithishkumars/Downloads/px_cat_g1v2.csv'
+    FROM '/yourfilepath'
     DELIMITER ','
     CSV HEADER;
 
